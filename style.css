@@ -1,14 +1,14 @@
-/* Content section is always at least the hight of the screen with a negative margin the height of the footer plus it's border. */
+
 #content {
     min-height: 100vh;
     margin: 0 auto -88px;
-    background-image: url("images/background/background.png");
+    background-image: url("images/hypnotize.png");
 }
-/* Returning the i tag to default after the reset.css file changed it. */
+
 i { 
     font-style: italic;
 }
-/* Some basic definitions for headers on this site. */
+
 h1, h2 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-weight: bold;
@@ -26,25 +26,19 @@ h2 {
     font-size: 1.3em;
     padding-bottom: 25px;
 }
-/* The top bar header with navigation. */
+
 header {
     width: 100%;
-    /* height: 80px; */
     background-color: white;
     border-bottom: 4px solid #cccccc;
     font-family: 'Georgia', Times, Times New Roman, serif;
     margin-bottom: 40px;
 }
 
-/* header section { */
-    /* width: 960px; */
-    /* margin: 0 auto; */
-    /* } */
     
     #myName {
         height: 77px;
-        /* padding: 0px 30px 0px 30px; */
-        /* float: left; */
+        
         line-height: 77px;
         background-color: #4aaaa5;
         text-align: center;
@@ -69,27 +63,20 @@ header {
 }
 
 .navButton a {
-    /* padding: 0px 30px 0px 30px; */
+   
     color: #999999;
     text-decoration: none;
 }
-/* The small vertical line separating the nav buttons. */
-/* #portButton a { */
-    /* border-left: 2px solid #efefef; */
-    /* border-right: 2px solid #efefef; */
-/* } */
-/* Sets the width and centers all the content below the header. */
+
 #bodyContent {
-    /* width: 960px;
-    margin: 0 auto; */
+   
 }
-/* Allows the body content section to grow with the main content section. */
 #bodyContent::after {
     content: "";
     display: block;
     clear: both;
 }
-/* Content displayed in the main box to the left of the screen. */
+
 #mainContent {
     width: 100%;
     padding: 40px 30px 40px 30px;
@@ -102,7 +89,7 @@ header {
     font-size: 1.2em;
     line-height: 2em;
 }
-/* The following styles are specific to the about me page */
+
 #mainContent p {
     margin: 16px 0px 16px 0px;
     text-indent: 30px;
@@ -115,20 +102,19 @@ header {
     margin: 0px 20px 10px 0px;
 }
 
-/* The following styles are specific to the portfolio page */
 .thumbnail {
     position: relative;
     margin-bottom: 40px;
     cursor: pointer;
     transition: all .8s ease;
 }
-/* Make thumbnail larger when hovered. */
+/
 .thumbnail:hover {
     transform: scale(1.1);
 }
-/* Maintains aspect ratio of image but does not allow image to be any wider than set amount of pixels. */
+
 .thumbnail img {
-    /* max-width: 270px; */
+    
     max-width: 100%;
 }
 
@@ -139,7 +125,7 @@ header {
 .right {
     float: right;
 }
-/* The label on the image. */
+
 .label {
     position: absolute;
     bottom: 20px;
@@ -152,7 +138,6 @@ header {
     font-size: 1.2em;
     background-color: rgba(74, 170, 165, .7);
 }
-/* The following styles are specific to the contact us page */
 form {
     width: 100%;
 }
@@ -180,9 +165,9 @@ input {
     padding: 8px 16px 8px 16px;
     cursor: pointer;
 }
-/* The following styles are for the sidebar on the right that is on all pages. */
+
 #sideBar {
-    /* width: 210px; */
+   
     padding: 40px 30px 40px 30px;
     background-color: white;
     box-shadow: 4px 4px 15px 2px #333333;
@@ -193,13 +178,12 @@ input {
 #sideBar a {
     text-decoration: none;
 }
-/* Styles for the social icons link with opacity transition animation. */
+
 .socialIcon {
-    /* position: relative; */
-    /* display: inline-block; */
+    
     width: 60px;
     height: 60px;
-    /* margin-top: 20px; */
+    
 }
 
 .socialIcon div {
@@ -210,18 +194,18 @@ input {
     height: 60px;
 }
 
-#gitHubIconBlack {
+#FacebookIconBlack {
     background-image: url("images/icon/github_black.png");
     background-size: contain;
     transition: opacity .3s ease;
 }
 
-#gitHubIconRed {
-    background-image: url("images/icon/github_red.png");
+#FacebookIconRed {
+    background-image: url("images/if_facebook_square_107117.png");
     background-size: contain;
 }
 
-#gitHubIconBlack:hover {
+#FacebookIconBlack:hover {
     opacity: 0;
 }
 
@@ -229,36 +213,36 @@ input {
     /* margin: 0px 10px 0px 10px; */
 }
 
-#linkedinIconBlack {
+#GithubIconBlack {
     background-image: url("images/icon/linkedin_black.png");
     background-size: contain;
     transition: opacity .3s ease;
 }
 
-#linkedinIconRed {
-    background-image: url("images/icon/linkedin_red.png");
+#GithubIconRed {
+    background-image: url("images/if_github_square_107105.png");
     background-size: contain;
 }
 
-#linkedinIconBlack:hover {
+#GithubIconBlack:hover {
     opacity: 0;
 }
 
-#stackIconBlack {
+#LinkedinIconBlack {
     background-image: url("images/icon/stackoverflow_black.png");
     background-size: contain;
     transition: opacity .3s ease;
 }
 
-#stackIconRed {
-    background-image: url("images/icon/stackoverflow_red.png");
+#LinkedinIconRed {
+    background-image: url("images/if_Linkin-01_762302.png");
     background-size: contain;
 }
 
-#stackIconBlack:hover {
+#LinkedinIconBlack:hover {
     opacity: 0;
 }
-/* Height of the footer and height of the blank div that is added to the body to stop the footer from overlapping body content. */
+
 footer, .push {
     height: 80px;
 }
